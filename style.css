@@ -1,0 +1,466 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+    font-size: 18px;
+}
+nav{
+    height: 35px;
+    margin-top:2%;
+    margin-bottom: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    color: #222222;
+}
+.logo{
+    font-size:24px;
+    font-weight: bold;
+    display: flex;
+    justify-items: center;
+    margin-left: 5%;
+}
+.logo-text{
+    line-height: 36px;
+    margin-left: 8px;
+}
+.menu{
+    width:50%;
+    text-align: right;
+    margin-right: 5%;
+}
+.menu>a{
+    text-decoration:none;
+    color: #222222;
+    padding-left: 5%;
+    font-weight: bold;
+}
+.menu>a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+.background-img{
+    width: 100%;
+    height: 600px;  
+}
+.first-background-img{
+    background-image: url(img/background-img.jpg);
+    z-index: 1;
+    background-position-y: 65%;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+.second-background-img{
+    background-image: url(img/second-background-img.jpg);
+    z-index: 2;
+    opacity:0.2;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position-y: 100%;
+}
+.welcome{
+    z-index: 5;
+    opacity: none;
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: 70%;
+    font-family: 'Raleway';
+}
+.welcome>span{
+    font-size: 100px;
+    color: #FFC53D;
+    font-weight: bold;
+    line-height: 117px;
+}
+.welcome>p{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    line-height: 42px;
+}
+.media{
+    display:flex;
+    justify-content: center;
+    z-index: 5;
+    height: 25px;
+    cursor: pointer;
+}
+.contact-me{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    color:#222222;
+    font-size: 36px;
+    vertical-align: top;
+    background-color: white;
+    padding-bottom: 5%;  
+}
+.button{
+    font-size: 18px;
+    background-image: linear-gradient(to right,#FF9A3D,#FFC53D);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-weight:bold;
+    margin: 25px 40px 0 ;
+    cursor: pointer;
+    border: 1px solid #FFC53D;
+}
+.button:hover {
+    background-image:none;
+    background-color: white;
+    border: 1.5px solid #FFC53D;
+    color: #FFC53D;
+    transition: 0.2s;
+}
+.about-me, .skills{
+    background-color: #fafaff ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    color:#222222;
+    padding-top:15px;
+    padding-bottom: 5%;
+    font-weight: bold;
+    position: relative;
+}
+.about-me::after, .skills::after{
+    content: '';
+    width:40%;
+    background-color: white;
+    position: absolute;
+    top:0;
+    z-index: 0;
+    bottom: 0;
+}
+.about-me::after{
+    content: '';
+    right: 0;
+}
+.skills{
+    margin-top: 5%;
+}
+.skills::after{
+    content: '';
+    left: 0;
+}
+.header-me, .header-skills{
+    padding: 2%;
+}
+.header-skills>span{
+    position: relative;
+    left: 35%;
+}
+.description, .container-skills{
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 54px;
+    display: flex;  
+}
+.photo-me{
+    background-image: url("img/me.jpg");
+    background-position: 25%;
+    background-size: cover;
+    height:100px;
+    width:100px;    
+    border-radius: 50%;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);    
+}
+ul{
+    font-weight: bold;
+    text-align:left;
+    list-style-type: none;
+    padding-right: 1%;
+    margin-top: 0;
+    min-width: 27%; 
+}
+li{
+    line-height: 200%;
+}
+li > span{
+    color:#FFC53D;
+    margin-left: 5px;
+}
+li>a{
+    text-decoration: underline;
+    color: #FFC53D;
+    margin-left: 5px;  
+}
+li>a:hover{
+    color:#FFC53D;
+}
+.text{
+    font-size: 18px;
+    max-width:auto;
+    height: 100%;
+    font-weight: normal;
+    text-align: justify;
+    padding-left:3%;
+    line-height: 150%;
+    border-left: 2px dotted #FFC53D;  
+}
+.header-skills{
+    margin-left: 10%
+}
+.container-skills{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    font-size: 24px;
+    text-align: center;
+    font-weight:normal;
+    color:#000000;
+    padding: 0 10%;
+    border-left: 2px dotted #FFC53D;
+}
+h2{
+    color:#FFC53D;
+    font-size: 24px;
+    font-weight: bold;
+}
+.icons:first-child{
+    border:none;
+}
+.center {
+    margin: auto;
+}
+.z-up{
+    position: relative;
+    z-index: 5;
+}
+.portfolio {
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top:5%;
+    font-family: 'Raleway';
+}
+.gallery{
+    background-color: aqua;
+    height:700px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:1% ;
+}
+.photo-1{
+    z-index: 1;
+    background-image: url(img/photo-1.jpg);
+    background-size: cover;
+    height: 350px;
+    width:40%;
+    position: relative;
+}
+.photo-2{
+    background-image: url(img/photo-2.jpg);
+    background-size: cover;
+    height: 350px;
+    width:20%;
+}
+.photo-3{
+    background-image: url(img/photo-3.jpg);
+    background-size: cover;
+    height: 350px;
+    width:40%;
+    background-position-y: 100%;
+}
+.photo-4{
+    background-image: url(img/photo-4.jpg);
+    background-size: cover;
+    height: 350px;
+    width:20%;
+    background-position-x: 50%;
+}
+.photo-5{
+    z-index: 1;
+    background-image: url(img/photo-5.jpg);
+    background-size: cover;
+    height: 350px;
+    width:80%;
+    background-position-y: 60%;
+    position: relative;
+}
+.photo-gradient{
+    z-index: 2;
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+    height: 350px;
+    width: 100%;
+    background-size: cover;    
+}
+.text-portfolio{
+    position: absolute;
+    top: 0; 
+    padding: 5%;
+    color: white;
+    font-family: 'Raleway';
+}
+.text-portfolio-1{
+    width: 100%;
+}
+.text-portfolio-5{
+    width: 50%;
+}
+.text-portfolio > header {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 2%;
+}
+.text-portfolio > span {
+    font-size: 16px;
+    line-height: 19px;
+}
+.text-portfolio > button {
+    display: block;
+    margin: 0;
+    margin-top:4%;
+    width:auto;
+    height: auto;
+    padding:2% 4%;
+    line-height: 21px;
+    font-family: 'Raleway';
+}
+.text-portfolio > button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-us{
+    margin-top:5%;
+    width: 100%;
+    background-color: #fafaff;
+    height: 785px;
+    font-family: 'Raleway';
+}
+.contact-us-text{
+    width: 100%;
+    margin:2% 2% 1% 2%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #222222;
+    font-family: 'Ubuntu';
+}
+.message{
+    display: flex;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.informations{
+    width: 42%;
+    height: 620px;
+    background-color: #FF9A3D;
+    color: white;
+    padding: 3% 5%;
+    position: relative;
+}
+.informations-text{
+    width: 75%;
+    height: auto;
+    font-size: 17px;
+    line-height: 172.35%;
+    margin-top:3%;
+    font-weight: normal;
+}
+.find-me{
+    position:absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin-bottom: 8%;
+}
+.find-me > .media {
+    margin-bottom:5%;
+}
+.find-me > ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 25px;
+}
+.address{
+    margin: 0;
+    color:white;
+    font-weight: bold;
+}
+.find-me-a{
+    margin:0;
+    color: white;
+    text-decoration: none;
+}
+.find-me-a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.form{
+    background-color:white;
+    height: 620px;
+    width:58%;
+    padding: 3% 5%;
+}
+.form>header{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 172.35%;
+    color: #222222;
+    margin-bottom: 2%;
+}
+input{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFF;
+    border-radius: 15px;
+    border: none;
+    color: #000000;
+}
+input:focus{
+    cursor: pointer;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+input:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.input{
+    margin-bottom: 3%;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    padding:2%;
+}
+.message-area{
+    height: 180px;
+}
+input::-webkit-input-placeholder{
+    color:#b1b1b1;
+    font-style: italic;
+}
+.send{
+    float: right;
+    margin: 0;
+    width: auto;
+    padding: 0 5%; 
+    font-weight: normal;
+    margin-top: 2%;
+}
+footer{
+    width: auto;
+    height: auto;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+    margin:2%;
+}
+.signature{
+    text-align: center;
+    width: 100%;
+}
+
