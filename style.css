@@ -360,6 +360,18 @@ h2{
     padding: 3% 5%;
     position: relative;
 }
+.informations::after{
+    width: auto;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 40px solid #FF9A3D;
+    border-bottom: 30px solid transparent;
+    z-index: 4;
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 35px;
+}
 .informations-text{
     width: 75%;
     height: auto;
